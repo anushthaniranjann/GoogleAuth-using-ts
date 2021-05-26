@@ -20,10 +20,9 @@ passport.deserializeUser(function (obj, cb) {
 });
 
 passport.use(new Strategy({
-        clientID: '489754038782-dp3754q96r9kr92vkit4mkkv8ea44t2e.apps.googleusercontent.com',
-        clientSecret: 'pkrO3L4lSxZQWYPIlIry8G3z',
+        clientID: 'from developer console',
+        clientSecret: 'from developer console',
          callbackURL: 'http://localhost:5000/auth/google/callback'
-        // callbackURL: 'http://localhost:5000'
     },
     function (accessToken, refreshToken, profile, done) {
         // if user already exist in your dataabse login otherwise
